@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Two-Page Website</title>
+	<link rel="stylesheet" href="style.css">
+
+  <style>
+
+    .centered-hr {
+ 			 width: 50%; /* Set a specific width */
+			margin: 0 auto; /* Center horizontally */
+  			border: 3px solid rgb(0, 0, 0); /* Example styling */
+			margin-top: 20px; /* Optional: Add some space above the line */
+	}
+
+  </style>
+    
+    
+</head>
+<body>
+	
+	<nav class="navbar">
+    <div class="logo">Elijah R.</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page2.html">More Info</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("toggle");
+    });
+  </script>
+
+    <h1 align="center" style="font-size: 67px; color: #8a2be2; margin-top: 67px;"> Elijah Rieves </h1>
+	
+	  <hr class="centered-hr" style="width: 90%; margin-top: 20px;">
+
+
+</body>
+</html>
